@@ -1,6 +1,12 @@
 require "rubygems"
+puts $:
+puts "*"*30
 require "rake"
 puts $:
+puts "*"*30
+require 'rspec'
+puts $:
+puts "*"*30
 require 'bundler'
 puts Kernel.const_get('Bundler') rescue 'not here'
 require "bundler/gem_tasks"
