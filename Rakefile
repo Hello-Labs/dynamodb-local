@@ -1,6 +1,8 @@
 require "rubygems"
 require "rake"
+puts $:
 require 'bundler'
+puts Kernel.const_get('Bundler') rescue 'not here'
 require "bundler/gem_tasks"
 
 task :default => :prepare
