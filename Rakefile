@@ -1,5 +1,5 @@
 require "bundler/gem_tasks"
-raise "here I am"
+raise LoadError, "here I am"
 
 task :default => :prepare
 
